@@ -1,0 +1,8 @@
+<table class="table table-hover">
+  <tr *ngFor="let item of service.list">
+    <td> {{ item.Nome }} </td>
+    <td> {{ item.Telefone }} </td>
+    <td (click)="editUser(item)" > <i class="fas fa-user-edit edit fa-lg"></i> </td>
+    <td (click)="removeUser(item.PMId)" > <i class="fas fa-user-times remove fa-lg"></i> </td>
+  </tr>
+</table>
